@@ -94,6 +94,9 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
           <NavBar locale={locale} />
           {children}
         </NextIntlClientProvider>

@@ -16,6 +16,7 @@
 
 .scrolled {
   height: 44px;
+  background: var(--alpha-black-80);
   border-bottom-color: var(--graphite-700);
 }
 

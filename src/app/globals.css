@@ -51,6 +51,36 @@ a {
   text-underline-offset: 3px;
 }
 
+/* Skip-to-main-content link — visually hidden until focused */
+.skip-link {
+  position: fixed;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: calc(var(--z-4) + 1);
+  padding: var(--space-2) var(--space-4);
+  background: var(--axial-black);
+  color: var(--axial-voltage);
+  border: 1px solid var(--axial-voltage);
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition:
+    opacity var(--duration-ui) var(--ease-axial),
+    transform var(--duration-ui) var(--ease-axial);
+}
+
+.skip-link:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  outline: none;
+}
+
 /* Utility classes mirroring brand token surface */
 .font-display {
   font-family: var(--font-display);

@@ -23,7 +23,7 @@ export function About() {
 
         <div className={styles.principles}>
           <EyebrowTag as="p">{t("principles_eyebrow")}</EyebrowTag>
-          <ol className={styles.principleList} role="list">
+          <ol className={styles.principleList}>
             {PRINCIPLE_KEYS.map((key, i) => (
               <Principle key={key} number={i + 1} text={t(key)} />
             ))}
