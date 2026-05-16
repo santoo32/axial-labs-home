@@ -1,0 +1,18 @@
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-400);
+  display: block;
+  margin: 0;
+}
+
+.voltage {
+  color: var(--axial-voltage);
+}
+
+.bone {
+  color: var(--axial-bone);
+}

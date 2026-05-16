@@ -1,0 +1,38 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sep {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  color: var(--graphite-600);
+  user-select: none;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-400);
+  text-decoration: none;
+  transition: color var(--duration-ui) var(--ease-axial);
+}
+
+.link:hover {
+  color: var(--axial-bone);
+}
+
+.active {
+  color: var(--axial-voltage-dim);
+  cursor: default;
+}

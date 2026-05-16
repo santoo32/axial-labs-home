@@ -1,0 +1,25 @@
+.mono {
+  font-family: var(--font-mono);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  line-height: 1;
+  display: inline-block;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.size10 { font-size: 0.625rem; } /* 10px */
+.size12 { font-size: var(--size-12); }
+.size14 { font-size: var(--size-14); }
+
+.colorDefault   { color: var(--graphite-400); }
+.colorVoltage   { color: var(--axial-voltage); }
+.colorDim       { color: var(--axial-voltage-dim); }
+.colorBone      { color: var(--axial-bone); }
+.colorSecondary { color: var(--graphite-500); }

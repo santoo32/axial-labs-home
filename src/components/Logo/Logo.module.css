@@ -1,0 +1,23 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  color: currentColor;
+}
+
+.lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: currentColor;
+  text-decoration: none;
+}
+
+.wordmarkText {
+  font-family: var(--font-display);
+  font-size: var(--size-16);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--track-tight);
+  color: var(--axial-bone);
+  line-height: 1;
+  white-space: nowrap;
+}

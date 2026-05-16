@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { NavBar } from "@/components/NavBar/NavBar";
 import "../globals.css";
 
 const inter = Inter({
@@ -45,6 +46,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <NavBar locale={locale} />
           {children}
         </NextIntlClientProvider>
       </body>

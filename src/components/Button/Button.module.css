@@ -1,0 +1,62 @@
+.btn {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    background var(--duration-ui) var(--ease-axial),
+    border-color var(--duration-ui) var(--ease-axial),
+    color var(--duration-ui) var(--ease-axial),
+    box-shadow var(--duration-ui) var(--ease-axial);
+}
+
+/* Primary — voltage */
+.primary {
+  color: var(--axial-voltage);
+  border: 1px solid var(--axial-voltage);
+  background: transparent;
+}
+
+.primary:hover {
+  background: rgba(198, 242, 78, 0.08);
+  box-shadow: var(--shadow-glow-soft);
+}
+
+.primary:active {
+  background: rgba(198, 242, 78, 0.14);
+  box-shadow: var(--shadow-glow-strong);
+}
+
+/* Ghost — graphite */
+.ghost {
+  color: var(--graphite-300);
+  border: 1px solid var(--graphite-700);
+  background: transparent;
+}
+
+.ghost:hover {
+  border-color: var(--graphite-400);
+  color: var(--axial-bone);
+}
+
+.ghost:active {
+  border-color: var(--graphite-300);
+  color: var(--axial-bone);
+}
+
+/* Disabled */
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.35;
+  pointer-events: none;
+}

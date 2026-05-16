@@ -1,0 +1,36 @@
+.frame {
+  position: relative;
+  border-top: 1px solid var(--graphite-700);
+}
+
+/* Vertical axis line — left edge of every section */
+.axisLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: var(--graphite-700);
+  pointer-events: none;
+}
+
+/* §NN / NN index badge — top-left corner */
+.index {
+  position: absolute;
+  top: var(--space-6);
+  left: var(--space-6);
+}
+
+.indexLabel {
+  font-family: var(--font-mono);
+  font-size: 0.625rem; /* 10px */
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-500);
+  white-space: nowrap;
+}
+
+.content {
+  padding: var(--space-16) clamp(var(--space-6), 5vw, var(--space-24));
+}
