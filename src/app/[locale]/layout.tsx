@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { NavBar } from "@/components/NavBar/NavBar";
+import { SITE_URL, buildAlternates } from "@/lib/seo";
+import { SITE } from "@/content/site";
 import "../globals.css";
 
 const inter = Inter({
@@ -19,15 +21,55 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s | Axial Labs",
-    default: "Axial Labs — Systems for ambitious software.",
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE.name,
+  url: SITE_URL,
+  logo: `${SITE_URL}/logos/axial-icon.svg`,
+  sameAs: [SITE.social.x, SITE.social.github],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: SITE.email,
+    contactType: "customer support",
   },
-  description:
-    "Engineered identity studio. We design brand systems and the software they run on.",
-  themeColor: "#0A0A0B",
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "hero" });
+
+  const heading = t("heading");
+  const description = t("sub");
+
+  return {
+    title: {
+      template: "%s | Axial Labs",
+      default: `Axial Labs — ${heading}`,
+    },
+    description,
+    metadataBase: new URL(SITE_URL),
+    openGraph: {
+      title: `Axial Labs — ${heading}`,
+      description,
+      url: `${SITE_URL}/${locale}`,
+      siteName: SITE.name,
+      locale: locale === "es" ? "es_419" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@axiallabs",
+      creator: "@axiallabs",
+    },
+    alternates: buildAlternates(locale),
+    themeColor: "#0A0A0B",
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -44,6 +86,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           <NavBar locale={locale} />
