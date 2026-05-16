@@ -1,0 +1,80 @@
+/* Token layer — source of truth for all visual values */
+@import "../../brand/tokens/build/tokens.css";
+
+/* Font variables wired from next/font/google (switch to next/font/local for production) */
+:root {
+  --font-display: var(--font-inter), "Neue Haas Grotesk Display", system-ui;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-editorial: "Source Serif 4", Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--axial-black);
+  color: var(--axial-bone);
+  line-height: 1.5;
+}
+
+/* Focus ring — 2px Voltage, 2px offset */
+:focus-visible {
+  outline: 2px solid var(--axial-voltage);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--axial-voltage);
+  color: var(--axial-black);
+}
+
+/* Link underline — 1px Voltage */
+a {
+  color: inherit;
+  text-decoration-color: var(--axial-voltage);
+  text-underline-offset: 3px;
+}
+
+/* Utility classes mirroring brand token surface */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--graphite-400);
+}
+
+.axis-v {
+  width: 1px;
+  background: var(--graphite-700);
+}
+
+.axis-h {
+  height: 1px;
+  background: var(--graphite-700);
+}

@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "eyebrow": "axial labs / engineered identity studio",
+    "heading": "Sistemas para software ambicioso.",
+    "sub": "Diseñamos la marca y construimos el software sobre el que opera. Sistemas tokenizados, ingeniería de producción, ciclos de cuatro semanas.",
+    "cta_primary": "Iniciar proyecto.",
+    "cta_ghost": "Ver el trabajo.",
+    "coordinate": "04°N · 73°W · v1.0"
+  },
+  "services": {
+    "eyebrow": "// SERVICIOS",
+    "heading": "Qué construimos.",
+    "brand_cluster": "Sistemas de marca",
+    "software_cluster": "Software e IT",
+    "b01": {
+      "code": "B.01",
+      "title": "Estrategia y posicionamiento de marca",
+      "body": "Tesis, audiencia, pilares de mensaje, tagline. Entregado como documento versionado, no una presentación."
+    },
+    "b02": {
+      "code": "B.02",
+      "title": "Sistemas de identidad tokenizados",
+      "body": "Logo, color, tipografía, movimiento — estructurados como tokens en un repo. Regenerables desde un prompt."
+    },
+    "b03": {
+      "code": "B.03",
+      "title": "Pipelines de generación de assets",
+      "body": "Plantillas, generadores y librerías de prompts. Tu equipo entrega 50 variantes sin nuestra intervención."
+    },
+    "i01": {
+      "code": "I.01",
+      "title": "Ingeniería de producto",
+      "body": "Next.js, React, TypeScript. Construimos el producto donde vive tu marca."
+    },
+    "i02": {
+      "code": "I.02",
+      "title": "Ingeniería de design systems",
+      "body": "Librerías de componentes, pipelines de tokens, puentes Figma-to-code. Una sola fuente de verdad."
+    },
+    "i03": {
+      "code": "I.03",
+      "title": "Automatización y herramientas internas",
+      "body": "Scripts, CLIs, integraciones. El cliente sale con ventaja operativa, no solo una entrega."
+    }
+  },
+  "about": {
+    "eyebrow": "// NOSOTROS",
+    "heading": "Construido sobre un eje.",
+    "pull_quote": "La mayoría de las agencias te entregan un PDF. Nosotros te entregamos un repositorio.",
+    "body": "Somos un equipo pequeño de diseñadores e ingenieros que construye sistemas de marca para empresas ambiciosas. Trabajamos en repos, entregamos en semanas y medimos dos veces.",
+    "principles_eyebrow": "// DIFERENCIACIÓN",
+    "p01": "Diseñamos el sistema y el software.",
+    "p02": "Precisión de ingeniería aplicada al trabajo de marca.",
+    "p03": "Outputs modulares — sin entregables únicos.",
+    "p04": "Herramientas como entregable: librerías de prompts, generadores, pipelines de CI.",
+    "p05": "Producción AI-nativa: cada asset regenerable desde tokens y prompts."
+  },
+  "contact": {
+    "eyebrow": "// CONTACTO",
+    "heading": "Construyamos algo preciso.",
+    "email_label": "santiagot.roa@gmail.com",
+    "form": {
+      "name_label": "Nombre",
+      "name_placeholder": "Tu nombre",
+      "email_label": "Email",
+      "email_placeholder": "tu@email.com",
+      "project_label": "Tipo de proyecto",
+      "project_brand": "Sistema de marca",
+      "project_software": "Software / producto",
+      "project_both": "Ambos",
+      "project_other": "Algo diferente",
+      "message_label": "Brief",
+      "message_placeholder": "¿Qué estás construyendo?",
+      "submit": "Enviar brief.",
+      "success": "Recibido. Respondemos en menos de 48 horas.",
+      "error": "Error al enviar. Escríbenos directamente."
+    }
+  },
+  "footer": {
+    "tagline": "Sistemas para software ambicioso.",
+    "legal": "© 2026 Axial Labs",
+    "nav_services": "Servicios",
+    "nav_about": "Nosotros",
+    "nav_contact": "Contacto"
+  },
+  "nav": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Iniciar proyecto."
+  },
+  "not_found": {
+    "eyebrow": "// 404",
+    "heading": "Esa ruta no existe.",
+    "body": "El wordmark no está perdido — simplemente no está aquí.",
+    "cta": "Volver al inicio."
+  }
+}

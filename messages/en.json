@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "eyebrow": "axial labs / engineered identity studio",
+    "heading": "Systems for ambitious software.",
+    "sub": "We design the brand and ship the software it runs on. Tokenized systems, production-grade engineering, four-week cycles.",
+    "cta_primary": "Start a project.",
+    "cta_ghost": "See the work.",
+    "coordinate": "04°N · 73°W · v1.0"
+  },
+  "services": {
+    "eyebrow": "// SERVICES",
+    "heading": "What we build.",
+    "brand_cluster": "Brand systems",
+    "software_cluster": "Software & IT",
+    "b01": {
+      "code": "B.01",
+      "title": "Brand strategy & positioning",
+      "body": "Thesis, audience, messaging pillars, tagline. Delivered as a versioned doc, not a deck."
+    },
+    "b02": {
+      "code": "B.02",
+      "title": "Tokenized identity systems",
+      "body": "Logo, color, type, motion — structured as tokens in a repo. Regeneratable from a prompt."
+    },
+    "b03": {
+      "code": "B.03",
+      "title": "Asset generation pipelines",
+      "body": "Templates, generators, and prompt libraries. Your team ships 50 variants without us."
+    },
+    "i01": {
+      "code": "I.01",
+      "title": "Product engineering",
+      "body": "Next.js, React, TypeScript. We build the product your brand lives in."
+    },
+    "i02": {
+      "code": "I.02",
+      "title": "Design-systems engineering",
+      "body": "Component libraries, token pipelines, Figma-to-code bridges. One source of truth."
+    },
+    "i03": {
+      "code": "I.03",
+      "title": "Automation & internal tooling",
+      "body": "Scripts, CLIs, integrations. You leave with leverage, not just a handoff."
+    }
+  },
+  "about": {
+    "eyebrow": "// ABOUT",
+    "heading": "Built around an axis.",
+    "pull_quote": "Most agencies hand you a PDF. We hand you a repository.",
+    "body": "We are a small team of designers and engineers building brand systems for ambitious companies. We work in repos, ship in weeks, and measure twice.",
+    "principles_eyebrow": "// DIFFERENTIATION",
+    "p01": "We design the system and the software.",
+    "p02": "Engineering-grade precision applied to brand work.",
+    "p03": "Modular outputs — no one-off deliverables.",
+    "p04": "Tooling as a deliverable: prompt libraries, generators, CI pipelines.",
+    "p05": "AI-native production: every asset regeneratable from tokens and prompts."
+  },
+  "contact": {
+    "eyebrow": "// CONTACT",
+    "heading": "Let's ship something precise.",
+    "email_label": "santiagot.roa@gmail.com",
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Your name",
+      "email_label": "Email",
+      "email_placeholder": "your@email.com",
+      "project_label": "Project type",
+      "project_brand": "Brand system",
+      "project_software": "Software / product",
+      "project_both": "Both",
+      "project_other": "Something else",
+      "message_label": "Brief",
+      "message_placeholder": "What are you building?",
+      "submit": "Send brief.",
+      "success": "Received. We'll reply within 48 hours.",
+      "error": "Send failed. Email us directly."
+    }
+  },
+  "footer": {
+    "tagline": "Systems for ambitious software.",
+    "legal": "© 2026 Axial Labs",
+    "nav_services": "Services",
+    "nav_about": "About",
+    "nav_contact": "Contact"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Start a project."
+  },
+  "not_found": {
+    "eyebrow": "// 404",
+    "heading": "That route doesn't exist.",
+    "body": "The wordmark isn't lost — it's just not here.",
+    "cta": "Back to home."
+  }
+}
