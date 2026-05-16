@@ -1,0 +1,48 @@
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+  margin-bottom: var(--space-16);
+}
+
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+.left {
+  position: sticky;
+  top: calc(56px + var(--space-4));
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(var(--size-40), 5vw, var(--size-72));
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--track-tight);
+  line-height: var(--lh-snug);
+  color: var(--axial-bone);
+  margin: var(--space-3) 0 var(--space-6);
+}
+
+.emailLink {
+  font-family: var(--font-mono);
+  font-size: var(--size-14);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  color: var(--graphite-300);
+  text-decoration: none;
+  border-bottom: 1px solid var(--graphite-700);
+  padding-bottom: 1px;
+  transition:
+    color var(--duration-ui) var(--ease-axial),
+    border-color var(--duration-ui) var(--ease-axial);
+}
+
+.emailLink:hover {
+  color: var(--axial-voltage);
+  border-color: var(--axial-voltage-dim);
+}

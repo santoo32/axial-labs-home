@@ -1,0 +1,62 @@
+.card {
+  position: relative;
+  padding: var(--space-6);
+  border-right: 1px solid var(--graphite-700);
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 1px solid transparent;
+  pointer-events: none;
+  transition: border-color var(--duration-ui) var(--ease-axial);
+}
+
+.card:hover::after {
+  border-color: var(--axial-voltage);
+}
+
+.code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-500);
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--size-32);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--track-tight);
+  line-height: var(--lh-snug);
+  color: var(--axial-bone);
+  margin: 0 0 var(--space-3);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: var(--size-16);
+  line-height: var(--lh-normal);
+  color: var(--graphite-300);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .card {
+    border-right: none;
+    border-bottom: 1px solid var(--graphite-700);
+  }
+
+  .card:last-child {
+    border-bottom: none;
+  }
+}

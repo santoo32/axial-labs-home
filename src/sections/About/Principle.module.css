@@ -1,0 +1,32 @@
+.principle {
+  display: flex;
+  gap: var(--space-4);
+  align-items: baseline;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--graphite-800);
+  list-style: none;
+  margin: 0;
+}
+
+.principle:last-child {
+  border-bottom: none;
+}
+
+.number {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  color: var(--axial-voltage-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.1em;
+}
+
+.text {
+  font-family: var(--font-body);
+  font-size: var(--size-16);
+  line-height: var(--lh-normal);
+  color: var(--graphite-300);
+  margin: 0;
+}

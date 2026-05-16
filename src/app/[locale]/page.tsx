@@ -1,10 +1,21 @@
-// Phase 0 stub — sections will be composed here in Phase 2.
-export default function Home() {
+import { Hero } from "@/sections/Hero/Hero";
+import { Services } from "@/sections/Services/Services";
+import { About } from "@/sections/About/About";
+import { Contact } from "@/sections/Contact/Contact";
+
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
   return (
     <main>
-      <p style={{ fontFamily: "var(--font-mono)", color: "var(--axial-voltage)", padding: "2rem" }}>
-        axial labs · build ready
-      </p>
+      <Hero />
+      <Services />
+      <About />
+      <Contact locale={locale} />
     </main>
   );
 }
