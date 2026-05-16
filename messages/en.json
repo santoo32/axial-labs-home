@@ -20,7 +20,7 @@
     "b02": {
       "code": "B.02",
       "title": "Tokenized identity systems",
-      "body": "Logo, color, type, motion — structured as tokens in a repo. Regeneratable from a prompt."
+      "body": "Logo, color, type, motion. Structured as tokens in a repo. Regeneratable from a prompt."
     },
     "b03": {
       "code": "B.03",
@@ -40,7 +40,7 @@
     "i03": {
       "code": "I.03",
       "title": "Automation & internal tooling",
-      "body": "Scripts, CLIs, integrations. You leave with leverage, not just a handoff."
+      "body": "Scripts, CLIs, integrations. You leave with operational advantage, not just a handoff."
     }
   },
   "about": {
@@ -51,7 +51,7 @@
     "principles_eyebrow": "// DIFFERENTIATION",
     "p01": "We design the system and the software.",
     "p02": "Engineering-grade precision applied to brand work.",
-    "p03": "Modular outputs — no one-off deliverables.",
+    "p03": "Modular outputs. No one-off deliverables.",
     "p04": "Tooling as a deliverable: prompt libraries, generators, CI pipelines.",
     "p05": "AI-native production: every asset regeneratable from tokens and prompts."
   },
@@ -92,7 +92,7 @@
   "not_found": {
     "eyebrow": "// 404",
     "heading": "That route doesn't exist.",
-    "body": "The wordmark isn't lost — it's just not here.",
+    "body": "The wordmark isn't lost. It's just not here.",
     "cta": "Back to home."
   }
 }

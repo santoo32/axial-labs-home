@@ -20,7 +20,7 @@
     "b02": {
       "code": "B.02",
       "title": "Sistemas de identidad tokenizados",
-      "body": "Logo, color, tipografía, movimiento — estructurados como tokens en un repo. Regenerables desde un prompt."
+      "body": "Logo, color, tipografía, movimiento. Estructurados como tokens en un repo. Regenerables desde un prompt."
     },
     "b03": {
       "code": "B.03",
@@ -51,7 +51,7 @@
     "principles_eyebrow": "// DIFERENCIACIÓN",
     "p01": "Diseñamos el sistema y el software.",
     "p02": "Precisión de ingeniería aplicada al trabajo de marca.",
-    "p03": "Outputs modulares — sin entregables únicos.",
+    "p03": "Outputs modulares. Sin entregables únicos.",
     "p04": "Herramientas como entregable: librerías de prompts, generadores, pipelines de CI.",
     "p05": "Producción AI-nativa: cada asset regenerable desde tokens y prompts."
   },
@@ -92,7 +92,7 @@
   "not_found": {
     "eyebrow": "// 404",
     "heading": "Esa ruta no existe.",
-    "body": "El wordmark no está perdido — simplemente no está aquí.",
+    "body": "El wordmark no está perdido. Simplemente no está aquí.",
     "cta": "Volver al inicio."
   }
 }

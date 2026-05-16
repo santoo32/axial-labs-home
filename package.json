@@ -10,7 +10,8 @@
     "format": "biome format --write .",
     "test": "vitest",
     "test:e2e": "playwright test",
-    "check-i18n": "tsx scripts/check-translations.ts"
+    "check-i18n": "tsx scripts/check-translations.ts",
+    "check-voice": "tsx scripts/check-voice.ts"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.0.0",
