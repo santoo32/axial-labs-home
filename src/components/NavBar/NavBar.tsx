@@ -36,6 +36,7 @@ export function NavBar({ locale }: Props) {
 
   const links = [
     { href: "#services", label: t("services") },
+    { href: "#pricing", label: t("pricing") },
     { href: "#about", label: t("about") },
     { href: "#contact", label: t("contact") },
   ];
@@ -55,8 +56,11 @@ export function NavBar({ locale }: Props) {
         {/* Desktop links */}
         <nav className={styles.links} aria-label="Main navigation">
           <ul role="list">
-            {links.map(({ href, label }) => (
-              <li key={href}>
+            {links.map(({ href, label }, i) => (
+              <li key={href} className={styles.linkItem}>
+                {i > 0 && (
+                  <span className={styles.sep} aria-hidden="true">·</span>
+                )}
                 <a href={href} className={styles.link}>
                   {label.toUpperCase()}
                 </a>

@@ -61,6 +61,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <div className="page-axis-line" aria-hidden="true" />
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>

@@ -8,16 +8,13 @@
   background: transparent;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
-  transition:
-    height var(--duration-ui) var(--ease-axial),
-    border-color var(--duration-ui) var(--ease-axial);
+  border-bottom: 1px solid var(--graphite-700);
+  transition: height var(--duration-ui) var(--ease-axial);
 }
 
 .scrolled {
   height: 44px;
   background: var(--alpha-black-80);
-  border-bottom-color: var(--graphite-700);
 }
 
 .inner {
@@ -47,10 +44,22 @@
 .links ul {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: 0;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+}
+
+.sep {
+  color: var(--graphite-700);
+  font-size: var(--size-12);
+  padding: 0 var(--space-2);
+  user-select: none;
 }
 
 .link {
@@ -60,6 +69,7 @@
   letter-spacing: var(--track-wider);
   color: var(--graphite-400);
   text-decoration: none;
+  padding: 0 var(--space-4);
   transition: color var(--duration-ui) var(--ease-axial);
 }
 

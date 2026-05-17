@@ -3,6 +3,7 @@ export const SITE = {
   email: "santiagot.roa@gmail.com",
   anchors: {
     services: "services",
+    pricing: "pricing",
     about: "about",
     contact: "contact",
   },

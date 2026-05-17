@@ -108,3 +108,15 @@ a {
   height: 1px;
   background: var(--graphite-700);
 }
+
+/* Fixed page-level left axis line */
+.page-axis-line {
+  position: fixed;
+  left: clamp(24px, 5vw, 96px);
+  top: 0;
+  width: 1px;
+  height: 100vh;
+  background: var(--graphite-700);
+  pointer-events: none;
+  z-index: calc(var(--z-3) - 1);
+}

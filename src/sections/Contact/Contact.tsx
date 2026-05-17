@@ -12,7 +12,7 @@ export function Contact({ locale }: Props) {
   const t = useTranslations("contact");
 
   return (
-    <SectionFrame index={3} total={4} id="contact">
+    <SectionFrame index={4} total={5} id="contact">
       <div className={styles.split}>
         <div className={styles.left}>
           <EyebrowTag as="p">{t("eyebrow")}</EyebrowTag>

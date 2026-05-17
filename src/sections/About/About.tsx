@@ -9,7 +9,7 @@ export function About() {
   const t = useTranslations("about");
 
   return (
-    <SectionFrame index={2} total={4} id="about">
+    <SectionFrame index={3} total={5} id="about">
       <EyebrowTag as="p">{t("eyebrow")}</EyebrowTag>
       <h2 id="about-heading" className={styles.heading}>
         {t("heading")}

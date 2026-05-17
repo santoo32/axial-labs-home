@@ -1,0 +1,287 @@
+/* Hourly rate card */
+.hourlyCard {
+  border: 1px solid var(--axial-voltage);
+  box-shadow: 0 0 24px rgba(198, 242, 78, 0.35);
+  padding: 40px 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.hourlyCard::before,
+.hourlyCard::after {
+  content: "";
+  position: absolute;
+  background: var(--axial-voltage);
+}
+
+.hourlyCard::before {
+  top: -1px;
+  left: -1px;
+  width: 12px;
+  height: 1px;
+}
+
+.hourlyCard::after {
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 12px;
+}
+
+@media (max-width: 768px) {
+  .hourlyCard {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px;
+  }
+}
+
+.hourlyEyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--axial-voltage);
+  margin: 0 0 20px;
+}
+
+.hourlyTitle {
+  font-family: var(--font-display);
+  font-size: var(--size-32);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-tight);
+  line-height: 1.1;
+  color: var(--axial-bone);
+  margin: 0 0 28px;
+}
+
+.priceLockup {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 0 0 8px;
+}
+
+.priceCurrency {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: var(--weight-medium);
+  color: var(--graphite-400);
+  letter-spacing: var(--track-wider);
+  align-self: flex-start;
+  padding-top: 8px;
+}
+
+.priceAmount {
+  font-family: var(--font-mono);
+  font-size: 80px;
+  font-weight: var(--weight-medium);
+  letter-spacing: -0.03em;
+  color: var(--axial-bone);
+  line-height: 1;
+}
+
+.priceUnit {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--track-wider);
+  color: var(--graphite-400);
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+.hourlyQualifier {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-500);
+  display: block;
+}
+
+.colLabel {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-500);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hourlyBullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hourlyBullets li {
+  font-family: var(--font-body);
+  font-size: var(--size-14);
+  color: var(--graphite-300);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--graphite-700);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.hourlyBullets li:first-child {
+  border-top: 1px solid var(--graphite-700);
+}
+
+.hourlyBullets li::before {
+  content: "→";
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  color: var(--axial-voltage);
+  flex-shrink: 0;
+}
+
+.hourlyAction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-6);
+}
+
+.hourlyNote {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-400);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.hourlyNote strong {
+  color: var(--axial-bone);
+  font-weight: var(--weight-medium);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--graphite-700);
+  margin: 40px 0 32px;
+  position: relative;
+}
+
+.dividerLabel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-500);
+  white-space: nowrap;
+  background: var(--axial-black);
+  padding-right: var(--space-4);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(var(--size-40), 5vw, var(--size-72));
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--track-tight);
+  line-height: var(--lh-snug);
+  color: var(--axial-bone);
+  margin: var(--space-3) 0 var(--space-8);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border: 1px solid var(--graphite-700);
+  padding: var(--space-8);
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardSignature {
+  border-color: var(--axial-voltage);
+  box-shadow: 0 0 24px rgba(198, 242, 78, 0.18);
+}
+
+.tier {
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--graphite-400);
+  margin: 0 0 var(--space-3);
+}
+
+.tierVoltage {
+  color: var(--axial-voltage);
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: var(--size-32);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--track-tight);
+  line-height: 1.1;
+  color: var(--axial-bone);
+  margin: 0 0 var(--space-6);
+}
+
+.price {
+  font-family: var(--font-mono);
+  font-size: var(--size-40);
+  font-weight: var(--weight-medium);
+  color: var(--axial-bone);
+  margin: 0 0 var(--space-8);
+  line-height: 1;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-8);
+  flex: 1;
+}
+
+.features li {
+  font-family: var(--font-body);
+  font-size: var(--size-14);
+  color: var(--graphite-300);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--graphite-700);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.features li::before {
+  content: "→";
+  font-family: var(--font-mono);
+  font-size: var(--size-12);
+  color: var(--graphite-500);
+  flex-shrink: 0;
+}
+
+.cta {
+  align-self: flex-start;
+}

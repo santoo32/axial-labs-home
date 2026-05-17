@@ -1,24 +1,20 @@
 .card {
-  position: relative;
+  border: 1px solid var(--graphite-700);
   padding: var(--space-6);
-  border-right: 1px solid var(--graphite-700);
-}
-
-.card:last-child {
-  border-right: none;
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border: 1px solid transparent;
-  pointer-events: none;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: border-color var(--duration-ui) var(--ease-axial);
+  cursor: pointer;
 }
 
-.card:hover::after {
+.card:hover {
   border-color: var(--axial-voltage);
+}
+
+.top {
+  flex: 1;
 }
 
 .code {
@@ -29,34 +25,42 @@
   letter-spacing: var(--track-wider);
   text-transform: uppercase;
   color: var(--graphite-500);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 .title {
-  font-family: var(--font-display);
-  font-size: var(--size-32);
+  font-family: var(--font-body);
+  font-size: var(--size-20);
   font-weight: var(--weight-semibold);
-  letter-spacing: var(--track-tight);
-  line-height: var(--lh-snug);
+  line-height: 1.2;
   color: var(--axial-bone);
-  margin: 0 0 var(--space-3);
+  margin: 0 0 var(--space-2);
 }
 
 .body {
   font-family: var(--font-body);
   font-size: var(--size-16);
   line-height: var(--lh-normal);
-  color: var(--graphite-300);
+  color: var(--graphite-400);
   margin: 0;
 }
 
-@media (max-width: 900px) {
-  .card {
-    border-right: none;
-    border-bottom: 1px solid var(--graphite-700);
-  }
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-6);
+}
 
-  .card:last-child {
-    border-bottom: none;
-  }
+.arrow {
+  font-family: var(--font-mono);
+  font-size: var(--size-16);
+  color: var(--graphite-400);
+  transition:
+    transform var(--duration-ui) var(--ease-axial),
+    color var(--duration-ui) var(--ease-axial);
+}
+
+.card:hover .arrow {
+  transform: translateX(4px);
+  color: var(--axial-voltage);
 }
