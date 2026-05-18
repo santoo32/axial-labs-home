@@ -11,8 +11,8 @@
     "eyebrow": "// SERVICIOS",
     "s01": {
       "code": "01 / 04",
-      "title": "Sistemas de marca.",
-      "body": "Identidad tokenizada, repositorios de design system, lenguaje de movimiento, playbook de voz."
+      "title": "Desarrollo full-stack.",
+      "body": "Apps web, APIs e infraestructura de producción. De arquitectura a deploy, de principio a fin."
     },
     "s02": {
       "code": "02 / 04",
@@ -21,12 +21,12 @@
     },
     "s03": {
       "code": "03 / 04",
-      "title": "Tokens y componentes.",
-      "body": "Paquetes de design tokens. Librerías Figma. Storybook. npm."
+      "title": "Gestión bilingüe de proyectos.",
+      "body": "Entrega completa en inglés y español. Coordinación cross-border, async-first."
     },
     "s04": {
       "code": "04 / 04",
-      "title": "Automatización.",
+      "title": "Automatización e IA.",
       "body": "Herramientas internas, flujos de trabajo de IA, sistemas de prompts, pipelines de CI."
     }
   },
@@ -109,10 +109,10 @@
     "services_heading": "Servicios",
     "company_heading": "Empresa",
     "contact_heading": "Contacto",
-    "s_brand": "Sistemas de marca",
+    "s_brand": "Desarrollo full-stack",
     "s_product": "UI de producto",
-    "s_tokens": "Tokens",
-    "s_automation": "Automatización",
+    "s_tokens": "Gestión bilingüe",
+    "s_automation": "Automatización e IA",
     "c_work": "Trabajo",
     "c_writing": "Artículos",
     "c_about": "Nosotros",

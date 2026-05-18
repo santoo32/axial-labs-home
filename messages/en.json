@@ -11,8 +11,8 @@
     "eyebrow": "// SERVICES",
     "s01": {
       "code": "01 / 04",
-      "title": "Brand systems.",
-      "body": "Tokenized identity, design-system repositories, motion language, voice playbook."
+      "title": "Full-stack development.",
+      "body": "Web apps, APIs, and production infrastructure. Architecture to deploy, end-to-end."
     },
     "s02": {
       "code": "02 / 04",
@@ -21,12 +21,12 @@
     },
     "s03": {
       "code": "03 / 04",
-      "title": "Tokens & components.",
-      "body": "Design-token packages. Figma libraries. Storybook. npm."
+      "title": "Bilingual project management.",
+      "body": "End-to-end delivery in English and Spanish. Cross-border coordination, async-first."
     },
     "s04": {
       "code": "04 / 04",
-      "title": "Automation.",
+      "title": "Automation & AI.",
       "body": "Internal tools, AI workflows, prompt systems, CI pipelines."
     }
   },
@@ -109,10 +109,10 @@
     "services_heading": "Services",
     "company_heading": "Company",
     "contact_heading": "Contact",
-    "s_brand": "Brand systems",
+    "s_brand": "Full-stack dev",
     "s_product": "Product UI",
-    "s_tokens": "Tokens",
-    "s_automation": "Automation",
+    "s_tokens": "Bilingual PM",
+    "s_automation": "Automation & AI",
     "c_work": "Work",
     "c_writing": "Writing",
     "c_about": "About",
