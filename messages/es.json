@@ -1,46 +1,33 @@
 {
   "hero": {
-    "eyebrow": "axial labs / engineered identity studio",
+    "eyebrow": "Engineered identity studio // Est. 2026",
     "heading": "Sistemas para software ambicioso.",
-    "sub": "Diseñamos la marca y construimos el software sobre el que opera. Sistemas tokenizados, ingeniería de producción, ciclos de cuatro semanas.",
-    "cta_primary": "Iniciar proyecto.",
-    "cta_ghost": "Ver el trabajo.",
+    "sub": "Diseñamos la marca y construimos el software sobre el que opera. Tokenizado, versionable, regenerable.",
+    "cta_primary": "Iniciar proyecto",
+    "cta_ghost": "Ver el trabajo →",
     "coordinate": "04°N · 73°W · v1.0"
   },
   "services": {
     "eyebrow": "// SERVICIOS",
-    "heading": "Qué construimos.",
-    "brand_cluster": "Sistemas de marca",
-    "software_cluster": "Software e IT",
-    "b01": {
-      "code": "B.01",
-      "title": "Estrategia y posicionamiento de marca",
-      "body": "Tesis, audiencia, pilares de mensaje, tagline. Entregado como documento versionado, no una presentación."
+    "s01": {
+      "code": "01 / 04",
+      "title": "Sistemas de marca.",
+      "body": "Identidad tokenizada, repositorios de design system, lenguaje de movimiento, playbook de voz."
     },
-    "b02": {
-      "code": "B.02",
-      "title": "Sistemas de identidad tokenizados",
-      "body": "Logo, color, tipografía, movimiento. Estructurados como tokens en un repo. Regenerables desde un prompt."
+    "s02": {
+      "code": "02 / 04",
+      "title": "UI de producto.",
+      "body": "Interfaces de producción. Librerías de componentes. Dashboards que se envían."
     },
-    "b03": {
-      "code": "B.03",
-      "title": "Pipelines de generación de assets",
-      "body": "Plantillas, generadores y librerías de prompts. Tu equipo entrega 50 variantes sin nuestra intervención."
+    "s03": {
+      "code": "03 / 04",
+      "title": "Tokens y componentes.",
+      "body": "Paquetes de design tokens. Librerías Figma. Storybook. npm."
     },
-    "i01": {
-      "code": "I.01",
-      "title": "Ingeniería de producto",
-      "body": "Next.js, React, TypeScript. Construimos el producto donde vive tu marca."
-    },
-    "i02": {
-      "code": "I.02",
-      "title": "Ingeniería de design systems",
-      "body": "Librerías de componentes, pipelines de tokens, puentes Figma-to-code. Una sola fuente de verdad."
-    },
-    "i03": {
-      "code": "I.03",
-      "title": "Automatización y herramientas internas",
-      "body": "Scripts, CLIs, integraciones. El cliente sale con ventaja operativa, no solo una entrega."
+    "s04": {
+      "code": "04 / 04",
+      "title": "Automatización.",
+      "body": "Herramientas internas, flujos de trabajo de IA, sistemas de prompts, pipelines de CI."
     }
   },
   "about": {
@@ -78,19 +65,18 @@
   },
   "pricing": {
     "eyebrow": "// PRECIOS",
-    "heading": "Cómo trabajamos.",
-    "hourly_eyebrow": "→ Piloto · Acceso anticipado",
-    "hourly_title": "Paga mientras avanzas.",
+    "hourly_eyebrow": "→ Acceso anticipado · Piloto",
+    "hourly_title": "Cobrado por hora.",
     "hourly_price": "20",
-    "hourly_qualifier": "Por hora · Sin compromiso",
+    "hourly_qualifier": "Sin compromiso · Paga a medida que avanzas",
     "hourly_includes": "// Incluye",
-    "hourly_i1": "Consulta de estrategia de marca",
-    "hourly_i2": "Configuración del sistema de tokens",
-    "hourly_i3": "Scaffold de componentes",
-    "hourly_i4": "Sesiones de revisión técnica",
-    "hourly_i5": "Soporte asíncrono por Slack",
-    "hourly_note_strong": "Tarifa de acceso anticipado.",
-    "hourly_note_body": "Aplica solo a proyectos piloto. Mínimo 4 horas.",
+    "hourly_i1": "Alcance flexible por sesión",
+    "hourly_i2": "Colaboración asíncrona por Slack",
+    "hourly_i3": "Check-in semanal de progreso",
+    "hourly_i4": "Entregables rastreados en Git",
+    "hourly_i5": "Trabajo de marca, UI o automatización",
+    "hourly_note_strong": "Diseñado para primeros clientes.",
+    "hourly_note_body": "Reserva un bloque de horas — empieza pequeño, amplía conforme avanza la confianza. Ideal para fundadores que quieren avanzar rápido sin un retainer a largo plazo.",
     "hourly_cta": "Reservar horas",
     "divider_label": "→ Proyectos a precio fijo",
     "studio_tier": "Studio",
@@ -119,7 +105,7 @@
     "foundry_cta": "GitHub"
   },
   "footer": {
-    "legal": "© 2026 Axial Labs",
+    "legal": "© 2026 — Axial Labs // Systems for ambitious software",
     "services_heading": "Servicios",
     "company_heading": "Empresa",
     "contact_heading": "Contacto",
@@ -127,15 +113,18 @@
     "s_product": "UI de producto",
     "s_tokens": "Tokens",
     "s_automation": "Automatización",
+    "c_work": "Trabajo",
+    "c_writing": "Blog",
     "c_about": "Nosotros",
     "c_contact": "Contacto"
   },
   "nav": {
+    "work": "Trabajo",
     "services": "Servicios",
     "pricing": "Precios",
+    "writing": "Blog",
     "about": "Nosotros",
-    "contact": "Contacto",
-    "cta": "Iniciar proyecto."
+    "cta": "Hablemos"
   },
   "not_found": {
     "eyebrow": "// 404",

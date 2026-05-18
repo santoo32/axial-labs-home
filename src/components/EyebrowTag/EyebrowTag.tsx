@@ -6,9 +6,16 @@ type Props = {
   variant?: "default" | "voltage" | "bone";
   prefix?: boolean;
   as?: "span" | "p" | "div";
+  id?: string;
 };
 
-export function EyebrowTag({ children, variant = "default", prefix = false, as: Tag = "span" }: Props) {
+export function EyebrowTag({
+  children,
+  variant = "default",
+  prefix = false,
+  as: Tag = "span",
+  id,
+}: Props) {
   const cls = [
     styles.eyebrow,
     variant === "voltage" ? styles.voltage : "",
@@ -18,7 +25,7 @@ export function EyebrowTag({ children, variant = "default", prefix = false, as: 
     .join(" ");
 
   return (
-    <Tag className={cls}>
+    <Tag id={id} className={cls}>
       {prefix && <span aria-hidden="true">→ </span>}
       {children}
     </Tag>

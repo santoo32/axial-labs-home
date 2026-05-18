@@ -8,12 +8,13 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
+  axes: ["opsz"],
   variable: "--font-inter",
   display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   variable: "--font-jetbrains-mono",
   display: "swap",
 });

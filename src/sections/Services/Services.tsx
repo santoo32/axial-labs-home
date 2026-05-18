@@ -10,10 +10,9 @@ export function Services() {
 
   return (
     <SectionFrame index={1} total={5} id="services">
-      <EyebrowTag as="p">{t("eyebrow")}</EyebrowTag>
-      <h2 id="services-heading" className={styles.heading}>
-        {t("heading")}
-      </h2>
+      <EyebrowTag as="p" id="services-heading">
+        {t("eyebrow")}
+      </EyebrowTag>
 
       <div className={styles.cards}>
         {ALL_SERVICE_IDS.map((id) => (

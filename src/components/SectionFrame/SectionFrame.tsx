@@ -20,7 +20,7 @@ export function SectionFrame({ index, total, id, label, children }: Props) {
 
       <div className={styles.index} aria-hidden="true">
         <span className={styles.indexLabel}>
-          §{pad(index)}&nbsp;/&nbsp;{pad(total - 1)}
+          {pad(index)}&nbsp;/&nbsp;{pad(total - 1)}
           {label && <>&nbsp;·&nbsp;{label}</>}
         </span>
       </div>

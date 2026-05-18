@@ -14,7 +14,7 @@
   pointer-events: none;
 }
 
-/* §NN / NN index badge — top-left corner */
+/* NN / NN index badge — top-left corner */
 .index {
   position: absolute;
   top: var(--space-6);

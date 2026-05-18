@@ -37,14 +37,10 @@ export function Hero() {
     <section id="hero" className={styles.section} aria-labelledby="hero-heading">
       <div className={styles.gridOverlay} aria-hidden="true" />
 
-      <span className={`${styles.cornerLabel} ${styles.cornerTL}`} aria-hidden="true">X 0 · Y 0</span>
-      <span className={`${styles.cornerLabel} ${styles.cornerTR}`} aria-hidden="true">X 1280 · Y 0</span>
-      <span className={`${styles.cornerLabel} ${styles.cornerBL}`} aria-hidden="true">X 0 · Y 720</span>
-      <span className={`${styles.cornerLabel} ${styles.cornerBR}`} aria-hidden="true">X 1280 · Y 720</span>
-
-      <div className={styles.indexBadge} aria-hidden="true">
-        <span className={styles.indexLabel}>§00&nbsp;/&nbsp;§04</span>
-      </div>
+      <span className={`${styles.cornerLabel} ${styles.cornerTL}`} aria-hidden="true">X 0 Y 0</span>
+      <span className={`${styles.cornerLabel} ${styles.cornerTR}`} aria-hidden="true">X 1280 Y 0</span>
+      <span className={`${styles.cornerLabel} ${styles.cornerBL}`} aria-hidden="true">X 0 Y 720</span>
+      <span className={`${styles.cornerLabel} ${styles.cornerBR}`} aria-hidden="true">X 1280 Y 720</span>
 
       <div className={styles.inner}>
         <EyebrowTag as="p" prefix>{t("eyebrow")}</EyebrowTag>
@@ -65,7 +61,7 @@ export function Hero() {
           <Button variant="primary" href="#contact">
             {t("cta_primary")} →
           </Button>
-          <Button variant="ghost" href="#services">
+          <Button variant="ghost" href="#work">
             {t("cta_ghost")}
           </Button>
         </div>

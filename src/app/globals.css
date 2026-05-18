@@ -1,10 +1,11 @@
 /* Token layer — source of truth for all visual values */
 @import "../../brand/tokens/build/tokens.css";
 
-/* Font variables wired from next/font/google (switch to next/font/local for production) */
+/* Font variables — Inter variable font (opsz axis) for both display and body */
 :root {
-  --font-display: var(--font-inter), "Neue Haas Grotesk Display", system-ui;
-  --font-body: var(--font-inter), system-ui, sans-serif;
+  /* --font-display: var(--font-inter), system-ui, sans-serif; */
+  --font-display: "Inter Display", "Neue Haas Grotesk Display", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
   --font-editorial: "Source Serif 4", Georgia, serif;
   --font-mono: var(--font-jetbrains-mono), monospace;
 }

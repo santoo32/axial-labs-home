@@ -62,23 +62,6 @@
   }
 }
 
-.indexBadge {
-  position: absolute;
-  top: var(--space-6);
-  left: var(--space-6);
-  z-index: 5;
-}
-
-.indexLabel {
-  font-family: var(--font-mono);
-  font-size: 0.625rem;
-  font-weight: var(--weight-medium);
-  letter-spacing: var(--track-wider);
-  text-transform: uppercase;
-  color: var(--graphite-500);
-  white-space: nowrap;
-}
-
 .inner {
   position: relative;
   z-index: 3;

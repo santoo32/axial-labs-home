@@ -34,7 +34,7 @@ export function Footer({ locale }: Props) {
             → AL / WORDMARK / v1.0
           </text>
           <text
-            x="400" y="148"
+            x="400" y="140"
             textAnchor="middle"
             style={{ fontFamily: "var(--font-display)", fontSize: "96px", fontWeight: 600, letterSpacing: "-0.02em" }}
             fill="currentColor"
@@ -67,18 +67,10 @@ export function Footer({ locale }: Props) {
         <div className={styles.col}>
           <p className={styles.colEyebrow}>{t("company_heading")}</p>
           <ul>
+            <li><a href="#" className={styles.link}>{t("c_work")}</a></li>
+            {/* <li><a href="#" className={styles.link}>{t("c_writing")}</a></li> */}
             <li><a href={`#${SITE.anchors.about}`} className={styles.link}>{t("c_about")}</a></li>
             <li><a href={`#${SITE.anchors.contact}`} className={styles.link}>{t("c_contact")}</a></li>
-            <li>
-              <a href={SITE.social.github} className={styles.link} target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href={SITE.social.x} className={styles.link} target="_blank" rel="noopener noreferrer">
-                X / Twitter
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -91,7 +83,17 @@ export function Footer({ locale }: Props) {
               </a>
             </li>
             <li>
-              <span className={styles.link}>Bogotá, Colombia</span>
+              <span className={styles.link}> Santa Fe, Argentina </span>
+            </li>
+            <li>
+              <a href={SITE.social.github} className={styles.link} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/santiagoroa" className={styles.link} target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>

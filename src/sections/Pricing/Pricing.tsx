@@ -31,10 +31,7 @@ export function Pricing() {
 
   return (
     <SectionFrame index={2} total={5} id="pricing">
-      <EyebrowTag as="p">{t("eyebrow")}</EyebrowTag>
-      <h2 id="pricing-heading" className={styles.heading}>
-        {t("heading")}
-      </h2>
+      <EyebrowTag as="p" id="pricing-heading">{t("eyebrow")}</EyebrowTag>
 
       {/* Hourly rate card */}
       <article className={styles.hourlyCard} aria-label={t("hourly_title")}>

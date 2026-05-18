@@ -13,11 +13,9 @@
   gap: var(--space-1);
   line-height: 1;
   white-space: nowrap;
-  transition:
-    background var(--duration-ui) var(--ease-axial),
-    border-color var(--duration-ui) var(--ease-axial),
-    color var(--duration-ui) var(--ease-axial),
-    box-shadow var(--duration-ui) var(--ease-axial);
+  transition: background var(--duration-ui) var(--ease-axial), border-color var(--duration-ui)
+    var(--ease-axial), color var(--duration-ui) var(--ease-axial), box-shadow var(--duration-ui)
+    var(--ease-axial);
 }
 
 /* Primary — voltage */
@@ -28,12 +26,14 @@
 }
 
 .primary:hover {
-  background: rgba(198, 242, 78, 0.08);
+  background: var(--axial-voltage);
+  color: var(--axial-black);
   box-shadow: var(--shadow-glow-soft);
 }
 
 .primary:active {
-  background: rgba(198, 242, 78, 0.14);
+  background: var(--axial-voltage);
+  color: var(--axial-black);
   box-shadow: var(--shadow-glow-strong);
 }
 

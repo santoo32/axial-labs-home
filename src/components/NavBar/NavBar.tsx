@@ -35,15 +35,16 @@ export function NavBar({ locale }: Props) {
   }, [menuOpen]);
 
   const links = [
+    { href: "#", label: t("work") },
     { href: "#services", label: t("services") },
     { href: "#pricing", label: t("pricing") },
+    // { href: "#", label: t("writing") },
     { href: "#about", label: t("about") },
-    { href: "#contact", label: t("contact") },
   ];
 
   return (
     <header
-      className={[styles.nav, scrolled ? styles.scrolled : ""].join(" ")}
+      className={[styles.nav, scrolled && styles.scrolled].filter(Boolean).join(" ")}
       role="banner"
       ref={menuRef}
     >
@@ -56,11 +57,8 @@ export function NavBar({ locale }: Props) {
         {/* Desktop links */}
         <nav className={styles.links} aria-label="Main navigation">
           <ul role="list">
-            {links.map(({ href, label }, i) => (
-              <li key={href} className={styles.linkItem}>
-                {i > 0 && (
-                  <span className={styles.sep} aria-hidden="true">·</span>
-                )}
+            {links.map(({ href, label }) => (
+              <li key={label} className={styles.linkItem}>
                 <a href={href} className={styles.link}>
                   {label.toUpperCase()}
                 </a>
@@ -94,13 +92,13 @@ export function NavBar({ locale }: Props) {
       {/* Mobile menu */}
       <nav
         id="mobile-menu"
-        className={[styles.mobileMenu, menuOpen ? styles.mobileMenuOpen : ""].join(" ")}
+        className={[styles.mobileMenu, menuOpen && styles.mobileMenuOpen].filter(Boolean).join(" ")}
         aria-label="Mobile navigation"
         aria-hidden={!menuOpen}
       >
         <ul role="list">
           {links.map(({ href, label }) => (
-            <li key={href}>
+            <li key={label}>
               <a
                 href={href}
                 className={styles.mobileLink}

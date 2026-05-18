@@ -1,46 +1,33 @@
 {
   "hero": {
-    "eyebrow": "axial labs / engineered identity studio",
+    "eyebrow": "Engineered identity studio // Est. 2026",
     "heading": "Systems for ambitious software.",
-    "sub": "We design the brand and ship the software it runs on. Tokenized systems, production-grade engineering, four-week cycles.",
-    "cta_primary": "Start a project.",
-    "cta_ghost": "See the work.",
+    "sub": "We design the brand and ship the software it runs on. Tokenized, versionable, regeneratable.",
+    "cta_primary": "Start a project",
+    "cta_ghost": "See the work →",
     "coordinate": "04°N · 73°W · v1.0"
   },
   "services": {
     "eyebrow": "// SERVICES",
-    "heading": "What we build.",
-    "brand_cluster": "Brand systems",
-    "software_cluster": "Software & IT",
-    "b01": {
-      "code": "B.01",
-      "title": "Brand strategy & positioning",
-      "body": "Thesis, audience, messaging pillars, tagline. Delivered as a versioned doc, not a deck."
+    "s01": {
+      "code": "01 / 04",
+      "title": "Brand systems.",
+      "body": "Tokenized identity, design-system repositories, motion language, voice playbook."
     },
-    "b02": {
-      "code": "B.02",
-      "title": "Tokenized identity systems",
-      "body": "Logo, color, type, motion. Structured as tokens in a repo. Regeneratable from a prompt."
+    "s02": {
+      "code": "02 / 04",
+      "title": "Product UI.",
+      "body": "Production-grade interfaces. Component libraries. Dashboards that ship."
     },
-    "b03": {
-      "code": "B.03",
-      "title": "Asset generation pipelines",
-      "body": "Templates, generators, and prompt libraries. Your team ships 50 variants without us."
+    "s03": {
+      "code": "03 / 04",
+      "title": "Tokens & components.",
+      "body": "Design-token packages. Figma libraries. Storybook. npm."
     },
-    "i01": {
-      "code": "I.01",
-      "title": "Product engineering",
-      "body": "Next.js, React, TypeScript. We build the product your brand lives in."
-    },
-    "i02": {
-      "code": "I.02",
-      "title": "Design-systems engineering",
-      "body": "Component libraries, token pipelines, Figma-to-code bridges. One source of truth."
-    },
-    "i03": {
-      "code": "I.03",
-      "title": "Automation & internal tooling",
-      "body": "Scripts, CLIs, integrations. You leave with operational advantage, not just a handoff."
+    "s04": {
+      "code": "04 / 04",
+      "title": "Automation.",
+      "body": "Internal tools, AI workflows, prompt systems, CI pipelines."
     }
   },
   "about": {
@@ -78,19 +65,18 @@
   },
   "pricing": {
     "eyebrow": "// PRICING",
-    "heading": "How we work.",
-    "hourly_eyebrow": "→ Pilot · Early access",
-    "hourly_title": "Pay as you go.",
+    "hourly_eyebrow": "→ Early access · Pilot",
+    "hourly_title": "Billed hourly.",
     "hourly_price": "20",
-    "hourly_qualifier": "Per hour · No commitment",
+    "hourly_qualifier": "No commitment · Pay as you go",
     "hourly_includes": "// Includes",
-    "hourly_i1": "Brand strategy consultation",
-    "hourly_i2": "Token system setup",
-    "hourly_i3": "Component scaffolding",
-    "hourly_i4": "Technical review sessions",
-    "hourly_i5": "Async Slack support",
-    "hourly_note_strong": "Early-access rate.",
-    "hourly_note_body": "Applies to pilot engagements only. Minimum 4 hours.",
+    "hourly_i1": "Flexible scope per session",
+    "hourly_i2": "Async collaboration via Slack",
+    "hourly_i3": "Weekly progress check-in",
+    "hourly_i4": "Git-tracked deliverables",
+    "hourly_i5": "Brand, UI, or automation work",
+    "hourly_note_strong": "Designed for first customers.",
+    "hourly_note_body": "Book a block of hours — start small, expand as trust builds. Ideal for founders who want to ship fast without a long-term retainer.",
     "hourly_cta": "Book hours",
     "divider_label": "→ Fixed-rate engagements",
     "studio_tier": "Studio",
@@ -119,7 +105,7 @@
     "foundry_cta": "GitHub"
   },
   "footer": {
-    "legal": "© 2026 Axial Labs",
+    "legal": "© 2026 — Axial Labs // Systems for ambitious software",
     "services_heading": "Services",
     "company_heading": "Company",
     "contact_heading": "Contact",
@@ -127,15 +113,18 @@
     "s_product": "Product UI",
     "s_tokens": "Tokens",
     "s_automation": "Automation",
+    "c_work": "Work",
+    "c_writing": "Writing",
     "c_about": "About",
     "c_contact": "Contact"
   },
   "nav": {
+    "work": "Work",
     "services": "Services",
     "pricing": "Pricing",
+    "writing": "Writing",
     "about": "About",
-    "contact": "Contact",
-    "cta": "Start a project."
+    "cta": "Get in touch"
   },
   "not_found": {
     "eyebrow": "// 404",
