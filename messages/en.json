@@ -44,7 +44,7 @@
   },
   "contact": {
     "eyebrow": "// CONTACT",
-    "heading": "Let's ship something precise.",
+    "heading": "Ship something precise.",
     "email_label": "santiagot.roa@gmail.com",
     "form": {
       "name_label": "Name",
@@ -76,7 +76,7 @@
     "hourly_i4": "Git-tracked deliverables",
     "hourly_i5": "Brand, UI, or automation work",
     "hourly_note_strong": "Designed for first customers.",
-    "hourly_note_body": "Book a block of hours — start small, expand as trust builds. Ideal for founders who want to ship fast without a long-term retainer.",
+    "hourly_note_body": "Book a block of hours. Start small, expand as the work grows. For founders who want to ship without a long-term retainer.",
     "hourly_cta": "Book hours",
     "divider_label": "→ Fixed-rate engagements",
     "studio_tier": "Studio",

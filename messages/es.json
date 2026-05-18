@@ -1,7 +1,7 @@
 {
   "hero": {
     "eyebrow": "Engineered identity studio // Est. 2026",
-    "heading": "Sistemas para software ambicioso.",
+    "heading": "Identidad que va a producción.",
     "sub": "Diseñamos la marca y construimos el software sobre el que opera. Tokenizado, versionable, regenerable.",
     "cta_primary": "Iniciar proyecto",
     "cta_ghost": "Ver el trabajo →",
@@ -17,7 +17,7 @@
     "s02": {
       "code": "02 / 04",
       "title": "UI de producto.",
-      "body": "Interfaces de producción. Librerías de componentes. Dashboards que se envían."
+      "body": "Interfaces de producción. Librerías de componentes. Dashboards listos para producción."
     },
     "s03": {
       "code": "03 / 04",
@@ -38,13 +38,13 @@
     "principles_eyebrow": "// DIFERENCIACIÓN",
     "p01": "Diseñamos el sistema y el software.",
     "p02": "Precisión de ingeniería aplicada al trabajo de marca.",
-    "p03": "Outputs modulares. Sin entregables únicos.",
+    "p03": "Outputs modulares. Nada ad-hoc.",
     "p04": "Herramientas como entregable: librerías de prompts, generadores, pipelines de CI.",
     "p05": "Producción AI-nativa: cada asset regenerable desde tokens y prompts."
   },
   "contact": {
     "eyebrow": "// CONTACTO",
-    "heading": "Construyamos algo preciso.",
+    "heading": "Envía un brief.",
     "email_label": "santiagot.roa@gmail.com",
     "form": {
       "name_label": "Nombre",
@@ -66,17 +66,17 @@
   "pricing": {
     "eyebrow": "// PRECIOS",
     "hourly_eyebrow": "→ Acceso anticipado · Piloto",
-    "hourly_title": "Cobrado por hora.",
+    "hourly_title": "Tarifa por hora",
     "hourly_price": "20",
     "hourly_qualifier": "Sin compromiso · Paga a medida que avanzas",
     "hourly_includes": "// Incluye",
     "hourly_i1": "Alcance flexible por sesión",
-    "hourly_i2": "Colaboración asíncrona por Slack",
+    "hourly_i2": "Colaboración asíncrona por email",
     "hourly_i3": "Check-in semanal de progreso",
     "hourly_i4": "Entregables rastreados en Git",
     "hourly_i5": "Trabajo de marca, UI o automatización",
     "hourly_note_strong": "Diseñado para primeros clientes.",
-    "hourly_note_body": "Reserva un bloque de horas — empieza pequeño, amplía conforme avanza la confianza. Ideal para fundadores que quieren avanzar rápido sin un retainer a largo plazo.",
+    "hourly_note_body": "Reserva un bloque de horas. Empieza pequeño, amplía según crezca el trabajo. Para fundadores que quieren avanzar sin un retainer a largo plazo.",
     "hourly_cta": "Reservar horas",
     "divider_label": "→ Proyectos a precio fijo",
     "studio_tier": "Studio",
@@ -86,7 +86,7 @@
     "studio_f2": "Tokens de diseño + librería de componentes",
     "studio_f3": "Diseño e implementación de UI de producto",
     "studio_f4": "Equipo dedicado, sprint de cuatro semanas",
-    "studio_cta": "Comenzar",
+    "studio_cta": "Escríbenos",
     "os_tier": "OS · Kit inicial",
     "os_subtitle": "Productizado.",
     "os_price": "$4,800/mes",
@@ -114,7 +114,7 @@
     "s_tokens": "Tokens",
     "s_automation": "Automatización",
     "c_work": "Trabajo",
-    "c_writing": "Blog",
+    "c_writing": "Artículos",
     "c_about": "Nosotros",
     "c_contact": "Contacto"
   },
@@ -122,14 +122,14 @@
     "work": "Trabajo",
     "services": "Servicios",
     "pricing": "Precios",
-    "writing": "Blog",
+    "writing": "Artículos",
     "about": "Nosotros",
-    "cta": "Hablemos"
+    "cta": "Escríbenos"
   },
   "not_found": {
     "eyebrow": "// 404",
     "heading": "Esa ruta no existe.",
-    "body": "El wordmark no está perdido. Simplemente no está aquí.",
+    "body": "El wordmark no está perdido. No está aquí.",
     "cta": "Volver al inicio."
   }
 }
