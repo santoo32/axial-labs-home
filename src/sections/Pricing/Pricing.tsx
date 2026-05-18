@@ -70,13 +70,13 @@ export function Pricing() {
       </article>
 
       {/* Divider */}
-      <div className={styles.divider} role="separator">
+      {/* <div className={styles.divider} role="separator">
         <span className={styles.dividerLabel}>{t("divider_label")}</span>
-      </div>
+      </div> */}
 
-      <div className={styles.grid}>
+      {/* <div className={styles.grid}> */}
         {/* Studio */}
-        <article className={styles.card}>
+        {/* <article className={styles.card}>
           <p className={styles.tier}>{t("studio_tier")}</p>
           <h3 className={styles.subtitle}>{t("studio_subtitle")}</h3>
           <p className={styles.price}>{t("studio_price")}</p>
@@ -88,10 +88,10 @@ export function Pricing() {
           <Button variant="primary" href={`#${SITE.anchors.contact}`} className={styles.cta}>
             {t("studio_cta")} →
           </Button>
-        </article>
+        </article> */}
 
         {/* OS Starter — signature tier */}
-        <article className={`${styles.card} ${styles.cardSignature}`}>
+        {/* <article className={`${styles.card} ${styles.cardSignature}`}>
           <p className={`${styles.tier} ${styles.tierVoltage}`}>{t("os_tier")}</p>
           <h3 className={styles.subtitle}>{t("os_subtitle")}</h3>
           <p className={styles.price}>{t("os_price")}</p>
@@ -103,10 +103,10 @@ export function Pricing() {
           <Button variant="primary" href={`#${SITE.anchors.contact}`} className={styles.cta}>
             {t("os_cta")} →
           </Button>
-        </article>
+        </article> */}
 
         {/* Foundry */}
-        <article className={styles.card}>
+        {/* <article className={styles.card}>
           <p className={styles.tier}>{t("foundry_tier")}</p>
           <h3 className={styles.subtitle}>{t("foundry_subtitle")}</h3>
           <p className={styles.price}>{t("foundry_price")}</p>
@@ -118,8 +118,8 @@ export function Pricing() {
           <Button variant="ghost" href={SITE.social.github} className={styles.cta}>
             {t("foundry_cta")} →
           </Button>
-        </article>
-      </div>
+        </article> */}
+      {/* </div> */}
     </SectionFrame>
   );
 }
