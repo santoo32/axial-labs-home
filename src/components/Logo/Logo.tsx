@@ -65,7 +65,7 @@ function WordmarkSvg({ width }: { width: number }) {
 export function Logo({ variant = "lockup", width, className }: Props) {
   if (variant === "icon") {
     return (
-      <span className={[styles.root, className ?? ""].join(" ")}>
+      <span className={className ? `${styles.root} ${className}` : styles.root}>
         <IconMark size={width ?? 20} />
       </span>
     );
@@ -73,7 +73,7 @@ export function Logo({ variant = "lockup", width, className }: Props) {
 
   if (variant === "wordmark") {
     return (
-      <span className={[styles.root, className ?? ""].join(" ")}>
+      <span className={className ? `${styles.root} ${className}` : styles.root}>
         <WordmarkSvg width={width ?? 160} />
       </span>
     );
@@ -81,9 +81,9 @@ export function Logo({ variant = "lockup", width, className }: Props) {
 
   // lockup: icon + text
   return (
-    <span className={[styles.lockup, className ?? ""].join(" ")}>
+    <span className={className ? `${styles.lockup} ${className}` : styles.lockup}>
       <IconMark size={width ? Math.round(width * 0.125) : 20} />
-      <span className={styles.wordmarkText}>Axial Labs</span>
+      <span className={styles.wordmarkText} suppressHydrationWarning>Axial Labs</span>
     </span>
   );
 }

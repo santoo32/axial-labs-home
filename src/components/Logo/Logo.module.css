@@ -21,3 +21,9 @@
   line-height: 1;
   white-space: nowrap;
 }
+
+@media (max-width: 480px) {
+  .wordmarkText {
+    display: none;
+  }
+}

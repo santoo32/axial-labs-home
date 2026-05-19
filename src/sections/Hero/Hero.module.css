@@ -10,6 +10,12 @@
   padding-bottom: var(--space-12);
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding-top: 80px;
+  }
+}
+
 /* 64×64 engineering grid overlay */
 .gridOverlay {
   position: absolute;
@@ -20,6 +26,12 @@
   background-size: 64px 64px;
   pointer-events: none;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .gridOverlay {
+    background-size: 32px 32px;
+  }
 }
 
 /* Corner coordinate labels */
@@ -62,6 +74,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .cornerBL {
+    display: none;
+  }
+}
+
 .inner {
   position: relative;
   z-index: 3;
@@ -73,6 +91,12 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: var(--space-16);
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding-left: clamp(var(--space-6), 5vw, var(--space-24));
+  }
 }
 
 /* Schematic H1 frame */
@@ -88,6 +112,12 @@
   width: 100%;
   height: 8px;
   overflow: visible;
+}
+
+@media (max-width: 480px) {
+  .tickExtra {
+    display: none;
+  }
 }
 
 .ruleTop {
@@ -110,7 +140,7 @@
 
 .heading {
   font-family: var(--font-display);
-  font-size: clamp(var(--size-72), 12vw, var(--size-160));
+  font-size: clamp(3rem, 10vw, var(--size-96));
   font-weight: var(--weight-semibold);
   line-height: var(--lh-snug);
   letter-spacing: var(--track-tight);
@@ -124,7 +154,7 @@
 
 .sub {
   font-family: var(--font-body);
-  font-size: 1.375rem;
+  font-size: clamp(var(--size-16), 2.5vw, 1.375rem);
   line-height: var(--lh-normal);
   color: var(--graphite-300);
   max-width: 60ch;
@@ -136,4 +166,18 @@
   flex-wrap: wrap;
   gap: var(--space-4);
   align-items: center;
+}
+
+@media (max-width: 480px) {
+  .ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctas a,
+  .ctas button {
+    width: 100%;
+    justify-content: center;
+  }
+
 }

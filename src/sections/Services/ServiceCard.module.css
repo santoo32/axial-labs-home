@@ -9,6 +9,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+  .card {
+    min-height: auto;
+  }
+}
+
 .card:hover {
   border-color: var(--axial-voltage);
 }

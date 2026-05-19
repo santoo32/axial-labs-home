@@ -24,7 +24,7 @@
 
 .pullQuote {
   font-family: var(--font-editorial);
-  font-size: var(--size-32);
+  font-size: clamp(var(--size-24), 4vw, var(--size-40));
   line-height: var(--lh-loose);
   color: var(--axial-bone);
   margin: 0 0 var(--space-6);

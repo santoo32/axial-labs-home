@@ -58,9 +58,10 @@ export default async function LocaleLayout({
   if (!(routing.locales as readonly string[]).includes(locale)) notFound();
 
   const messages = await getMessages();
+  const now = new Date();
 
   return (
-    <NextIntlClientProvider messages={messages}>
+    <NextIntlClientProvider messages={messages} now={now}>
       <div className="page-axis-line" aria-hidden="true" />
       <a href="#main-content" className="skip-link">
         Skip to main content

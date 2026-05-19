@@ -34,9 +34,23 @@
 
 @media (max-width: 768px) {
   .hourlyCard {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
     padding: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hourlyCard {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .hourlyAction a,
+  .hourlyAction button {
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -68,7 +82,7 @@
 
 .priceCurrency {
   font-family: var(--font-mono);
-  font-size: 22px;
+  font-size: clamp(14px, 2vw, 22px);
   font-weight: var(--weight-medium);
   color: var(--graphite-400);
   letter-spacing: var(--track-wider);
@@ -78,7 +92,7 @@
 
 .priceAmount {
   font-family: var(--font-mono);
-  font-size: 80px;
+  font-size: clamp(44px, 8vw, 80px);
   font-weight: var(--weight-medium);
   letter-spacing: -0.03em;
   color: var(--axial-bone);
@@ -87,7 +101,7 @@
 
 .priceUnit {
   font-family: var(--font-mono);
-  font-size: 18px;
+  font-size: clamp(12px, 1.5vw, 18px);
   font-weight: var(--weight-regular);
   letter-spacing: var(--track-wider);
   color: var(--graphite-400);

@@ -3,7 +3,16 @@ import { EyebrowTag } from "@/components/EyebrowTag/EyebrowTag";
 import { Button } from "@/components/Button/Button";
 import styles from "./Hero.module.css";
 
-const TICK_X = [0, 160, 266, 400, 534, 640, 800];
+// At ≤480px, only the 4 "keep" ticks render; the 3 "extra" are hidden via CSS.
+const TICKS: { x: number; extra?: boolean }[] = [
+  { x: 0 },
+  { x: 160, extra: true },
+  { x: 266 },
+  { x: 400, extra: true },
+  { x: 534 },
+  { x: 640, extra: true },
+  { x: 800 },
+];
 
 function TickRow({ flipped }: { flipped?: boolean }) {
   return (
@@ -14,9 +23,10 @@ function TickRow({ flipped }: { flipped?: boolean }) {
       height="8"
       aria-hidden="true"
     >
-      {TICK_X.map((x) => (
+      {TICKS.map(({ x, extra }) => (
         <line
           key={x}
+          className={extra ? styles.tickExtra : undefined}
           x1={x}
           y1={flipped ? 0 : 8}
           x2={x}

@@ -39,6 +39,7 @@
   border: 1px solid var(--graphite-700);
   border-radius: 0;
   padding: var(--space-2) var(--space-3);
+  min-height: 44px;
   outline: none;
   transition: border-color var(--duration-ui) var(--ease-axial);
   appearance: none;

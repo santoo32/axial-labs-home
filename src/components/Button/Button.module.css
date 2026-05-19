@@ -6,6 +6,7 @@
   text-transform: uppercase;
   border-radius: 0;
   padding: var(--space-2) var(--space-4);
+  min-height: 44px;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
@@ -59,4 +60,10 @@
 .btn[aria-disabled="true"] {
   opacity: 0.35;
   pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .ghost {
+    border-color: var(--graphite-500);
+  }
 }
