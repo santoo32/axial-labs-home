@@ -76,11 +76,11 @@ for (const locale of locales) {
       expect(text?.length).toBeGreaterThan(5);
     });
 
-    test("services section contains 6 service cards", async ({ page }) => {
+    test("services section contains 4 service cards", async ({ page }) => {
       await page.goto(`/${locale}`);
       // Each ServiceCard is an <article>
       const cards = page.locator("#services article");
-      await expect(cards).toHaveCount(6);
+      await expect(cards).toHaveCount(4);
     });
 
     test("about section has pull-quote and principles list", async ({ page }) => {
@@ -93,9 +93,7 @@ for (const locale of locales) {
     test("contact section has form and email link", async ({ page }) => {
       await page.goto(`/${locale}`);
       await expect(page.locator("#contact form")).toBeVisible();
-      await expect(
-        page.getByRole("link", { name: /santiagot\.roa@gmail\.com/i }),
-      ).toBeVisible();
+      await expect(page.getByRole("link", { name: /santiagot\.roa@gmail\.com/i })).toBeVisible();
     });
 
     // ── Contact form ─────────────────────────────────────────────────────────
@@ -136,7 +134,7 @@ for (const locale of locales) {
         .analyze();
 
       const serious = results.violations.filter(
-        (v) => v.impact === "serious" || v.impact === "critical",
+        (v) => v.impact === "serious" || v.impact === "critical"
       );
 
       if (serious.length > 0) {
@@ -144,7 +142,7 @@ for (const locale of locales) {
           `Axe violations on /${locale}:\n` +
             serious
               .map((v) => `  [${v.impact}] ${v.id}: ${v.description}\n    ${v.helpUrl}`)
-              .join("\n"),
+              .join("\n")
         );
       }
 

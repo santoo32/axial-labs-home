@@ -27,11 +27,6 @@
     }
   },
   "files": {
-    "ignore": [
-      "node_modules",
-      ".next",
-      "brand",
-      "public"
-    ]
+    "ignore": ["node_modules", ".next", "brand", "public"]
   }
 }

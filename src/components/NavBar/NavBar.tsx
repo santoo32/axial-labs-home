@@ -10,7 +10,8 @@ import styles from "./NavBar.module.css";
 
 type Props = { locale: string };
 
-const FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+const FOCUSABLE =
+  'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
 export function NavBar({ locale }: Props) {
   const t = useTranslations("nav");
@@ -149,6 +150,7 @@ export function NavBar({ locale }: Props) {
         className={menuOpen ? `${styles.mobileMenu} ${styles.mobileMenuOpen}` : styles.mobileMenu}
         aria-label="Mobile navigation"
         aria-hidden={!menuOpen}
+        inert={!menuOpen || undefined}
       >
         <ul role="list">
           {links.map(({ href, label }) => (

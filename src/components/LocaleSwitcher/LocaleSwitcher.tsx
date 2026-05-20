@@ -22,17 +22,17 @@ export function LocaleSwitcher({ currentLocale }: Props) {
         const isActive = locale === currentLocale;
         return (
           <span key={locale} className={styles.item}>
-            {i > 0 && <span className={styles.sep} aria-hidden="true">·</span>}
+            {i > 0 && (
+              <span className={styles.sep} aria-hidden="true">
+                ·
+              </span>
+            )}
             {isActive ? (
               <span className={[styles.link, styles.active].join(" ")} aria-current="true">
                 {locale.toUpperCase()}
               </span>
             ) : (
-              <Link
-                href={pathWithoutLocale}
-                locale={locale}
-                className={styles.link}
-              >
+              <Link href={pathWithoutLocale} locale={locale} className={styles.link}>
                 {locale.toUpperCase()}
               </Link>
             )}

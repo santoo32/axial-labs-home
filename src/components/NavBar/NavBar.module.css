@@ -125,9 +125,8 @@
   transform: translateY(-8px);
   opacity: 0;
   pointer-events: none;
-  transition:
-    opacity var(--duration-ui) var(--ease-axial),
-    transform var(--duration-ui) var(--ease-axial);
+  transition: opacity var(--duration-ui) var(--ease-axial), transform var(--duration-ui)
+    var(--ease-axial);
 }
 
 .mobileMenuOpen {

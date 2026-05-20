@@ -16,7 +16,7 @@ export default function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
     const locale =
       (routing.locales as readonly string[]).find(
-        (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
+        (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
       ) ?? routing.defaultLocale;
 
     const requestHeaders = new Headers(request.headers);

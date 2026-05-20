@@ -106,7 +106,9 @@ export function ContactForm({ locale }: Props) {
           id="cf-email"
           name="email"
           type="email"
-          className={[styles.input, errors.email ? styles.inputError : ""].filter(Boolean).join(" ")}
+          className={[styles.input, errors.email ? styles.inputError : ""]
+            .filter(Boolean)
+            .join(" ")}
           placeholder={t("email_placeholder")}
           autoComplete="email"
           aria-describedby={errors.email ? "cf-email-error" : undefined}
@@ -126,7 +128,9 @@ export function ContactForm({ locale }: Props) {
         <select
           id="cf-project"
           name="project"
-          className={[styles.select, errors.project ? styles.inputError : ""].filter(Boolean).join(" ")}
+          className={[styles.select, errors.project ? styles.inputError : ""]
+            .filter(Boolean)
+            .join(" ")}
           defaultValue=""
           aria-describedby={errors.project ? "cf-project-error" : undefined}
           aria-invalid={errors.project ? true : undefined}
@@ -153,7 +157,9 @@ export function ContactForm({ locale }: Props) {
         <textarea
           id="cf-message"
           name="message"
-          className={[styles.textarea, errors.message ? styles.inputError : ""].filter(Boolean).join(" ")}
+          className={[styles.textarea, errors.message ? styles.inputError : ""]
+            .filter(Boolean)
+            .join(" ")}
           placeholder={t("message_placeholder")}
           rows={5}
           aria-describedby={errors.message ? "cf-message-error" : undefined}
@@ -175,12 +181,8 @@ export function ContactForm({ locale }: Props) {
       </Button>
 
       <div aria-live="polite" className={styles.statusMessage}>
-        {status === "success" && (
-          <span className={styles.successText}>{t("success")}</span>
-        )}
-        {status === "error" && (
-          <span className={styles.errorMsg}>{t("error")}</span>
-        )}
+        {status === "success" && <span className={styles.successText}>{t("success")}</span>}
+        {status === "error" && <span className={styles.errorMsg}>{t("error")}</span>}
       </div>
     </form>
   );

@@ -16,11 +16,7 @@ type AsButton = BaseProps & { href?: never; type?: "button" | "submit" | "reset"
 type Props = AsLink | AsButton;
 
 export function Button({ variant = "primary", children, className, disabled, ...rest }: Props) {
-  const cls = [
-    styles.btn,
-    variant === "primary" ? styles.primary : styles.ghost,
-    className ?? "",
-  ]
+  const cls = [styles.btn, variant === "primary" ? styles.primary : styles.ghost, className ?? ""]
     .filter(Boolean)
     .join(" ");
 
@@ -38,11 +34,7 @@ export function Button({ variant = "primary", children, className, disabled, ...
   }
 
   return (
-    <button
-      type={(rest as AsButton).type ?? "button"}
-      className={cls}
-      disabled={disabled}
-    >
+    <button type={(rest as AsButton).type ?? "button"} className={cls} disabled={disabled}>
       {children}
     </button>
   );

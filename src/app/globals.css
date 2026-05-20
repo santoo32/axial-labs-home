@@ -76,9 +76,8 @@ a {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-8px);
-  transition:
-    opacity var(--duration-ui) var(--ease-axial),
-    transform var(--duration-ui) var(--ease-axial);
+  transition: opacity var(--duration-ui) var(--ease-axial), transform var(--duration-ui)
+    var(--ease-axial);
 }
 
 .skip-link:focus-visible {

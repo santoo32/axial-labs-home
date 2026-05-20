@@ -83,7 +83,9 @@ export function Logo({ variant = "lockup", width, className }: Props) {
   return (
     <span className={className ? `${styles.lockup} ${className}` : styles.lockup}>
       <IconMark size={width ? Math.round(width * 0.125) : 20} />
-      <span className={styles.wordmarkText} suppressHydrationWarning>Axial Labs</span>
+      <span className={styles.wordmarkText} suppressHydrationWarning>
+        Axial Labs
+      </span>
     </span>
   );
 }

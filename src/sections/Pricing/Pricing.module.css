@@ -1,3 +1,19 @@
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(198, 242, 78, 0);
+  }
+  50% {
+    box-shadow: 0 0 48px rgba(198, 242, 78, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 24px rgba(198, 242, 78, 0.35);
+  }
+}
+
+.hourlyCardGlow {
+  animation: glow-pulse 0.6s var(--ease-axial) forwards;
+}
+
 /* Hourly rate card */
 .hourlyCard {
   border: 1px solid var(--axial-voltage);

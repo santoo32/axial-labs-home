@@ -20,7 +20,7 @@ if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) 
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: Promise<{ locale: string }> },
+  { params }: { params: Promise<{ locale: string }> }
 ) {
   const { locale } = await params;
 
@@ -54,7 +54,7 @@ export async function POST(
   if (!parsed.success) {
     return NextResponse.json(
       { error: "Validation failed", issues: parsed.error.issues },
-      { status: 422 },
+      { status: 422 }
     );
   }
 

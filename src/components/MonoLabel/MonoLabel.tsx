@@ -26,7 +26,13 @@ const sizeClass: Record<string, string> = {
   "14": styles.size14,
 };
 
-export function MonoLabel({ children, casing, color = "default", size = "12", as: Tag = "span" }: Props) {
+export function MonoLabel({
+  children,
+  casing,
+  color = "default",
+  size = "12",
+  as: Tag = "span",
+}: Props) {
   const cls = [
     styles.mono,
     casing === "upper" ? styles.upper : styles.lower,

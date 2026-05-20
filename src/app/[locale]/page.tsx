@@ -1,4 +1,5 @@
 import { Hero } from "@/sections/Hero/Hero";
+import { Ticker } from "@/components/Ticker/Ticker";
 import { Services } from "@/sections/Services/Services";
 import { Pricing } from "@/sections/Pricing/Pricing";
 import { About } from "@/sections/About/About";
@@ -14,6 +15,7 @@ export default async function Home({
   return (
     <main id="main-content" tabIndex={-1}>
       <Hero />
+      <Ticker />
       <Services />
       <Pricing />
       <About />

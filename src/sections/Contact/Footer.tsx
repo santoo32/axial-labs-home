@@ -19,14 +19,18 @@ export function Footer({ locale }: Props) {
           focusable="false"
         >
           <line
-            x1="80" y1="40" x2="80" y2="200"
+            x1="80"
+            y1="40"
+            x2="80"
+            y2="200"
             stroke="currentColor"
             strokeWidth="1"
             strokeLinecap="square"
             strokeOpacity="0.4"
           />
           <text
-            x="100" y="32"
+            x="100"
+            y="32"
             style={{ fontFamily: "var(--font-mono)", fontSize: "12px" }}
             fill="currentColor"
             fillOpacity="0.6"
@@ -34,15 +38,22 @@ export function Footer({ locale }: Props) {
             → AL / WORDMARK / v1.0
           </text>
           <text
-            x="400" y="140"
+            x="400"
+            y="140"
             textAnchor="middle"
-            style={{ fontFamily: "var(--font-display)", fontSize: "96px", fontWeight: 600, letterSpacing: "-0.02em" }}
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "96px",
+              fontWeight: 600,
+              letterSpacing: "-0.02em",
+            }}
             fill="currentColor"
           >
             AXIAL LABS
           </text>
           <text
-            x="400" y="184"
+            x="400"
+            y="184"
             textAnchor="middle"
             style={{ fontFamily: "var(--font-mono)", fontSize: "12px", letterSpacing: "0.06em" }}
             fill="currentColor"
@@ -57,20 +68,48 @@ export function Footer({ locale }: Props) {
         <div className={styles.col}>
           <p className={styles.colEyebrow}>{t("services_heading")}</p>
           <ul>
-            <li><a href={`#${SITE.anchors.services}`} className={styles.link}>{t("s_brand")}</a></li>
-            <li><a href={`#${SITE.anchors.services}`} className={styles.link}>{t("s_product")}</a></li>
-            <li><a href={`#${SITE.anchors.services}`} className={styles.link}>{t("s_tokens")}</a></li>
-            <li><a href={`#${SITE.anchors.services}`} className={styles.link}>{t("s_automation")}</a></li>
+            <li>
+              <a href={`#${SITE.anchors.services}`} className={styles.link}>
+                {t("s_brand")}
+              </a>
+            </li>
+            <li>
+              <a href={`#${SITE.anchors.services}`} className={styles.link}>
+                {t("s_product")}
+              </a>
+            </li>
+            <li>
+              <a href={`#${SITE.anchors.services}`} className={styles.link}>
+                {t("s_tokens")}
+              </a>
+            </li>
+            <li>
+              <a href={`#${SITE.anchors.services}`} className={styles.link}>
+                {t("s_automation")}
+              </a>
+            </li>
           </ul>
         </div>
 
         <div className={styles.col}>
           <p className={styles.colEyebrow}>{t("company_heading")}</p>
           <ul>
-            <li><a href="#" className={styles.link}>{t("c_work")}</a></li>
+            <li>
+              <a href="#" className={styles.link}>
+                {t("c_work")}
+              </a>
+            </li>
             {/* <li><a href="#" className={styles.link}>{t("c_writing")}</a></li> */}
-            <li><a href={`#${SITE.anchors.about}`} className={styles.link}>{t("c_about")}</a></li>
-            <li><a href={`#${SITE.anchors.contact}`} className={styles.link}>{t("c_contact")}</a></li>
+            <li>
+              <a href={`#${SITE.anchors.about}`} className={styles.link}>
+                {t("c_about")}
+              </a>
+            </li>
+            <li>
+              <a href={`#${SITE.anchors.contact}`} className={styles.link}>
+                {t("c_contact")}
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -86,12 +125,22 @@ export function Footer({ locale }: Props) {
               <span className={styles.link}> Santa Fe, Argentina </span>
             </li>
             <li>
-              <a href={SITE.social.github} className={styles.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={SITE.social.github}
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 GitHub
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/santiagoroa" className={styles.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://linkedin.com/in/santiagoroa"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
               </a>
             </li>

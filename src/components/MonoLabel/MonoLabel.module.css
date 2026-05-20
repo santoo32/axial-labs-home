@@ -14,12 +14,28 @@
   text-transform: lowercase;
 }
 
-.size10 { font-size: 0.625rem; } /* 10px */
-.size12 { font-size: var(--size-12); }
-.size14 { font-size: var(--size-14); }
+.size10 {
+  font-size: 0.625rem;
+} /* 10px */
+.size12 {
+  font-size: var(--size-12);
+}
+.size14 {
+  font-size: var(--size-14);
+}
 
-.colorDefault   { color: var(--graphite-400); }
-.colorVoltage   { color: var(--axial-voltage); }
-.colorDim       { color: var(--axial-voltage-dim); }
-.colorBone      { color: var(--axial-bone); }
-.colorSecondary { color: var(--graphite-500); }
+.colorDefault {
+  color: var(--graphite-400);
+}
+.colorVoltage {
+  color: var(--axial-voltage);
+}
+.colorDim {
+  color: var(--axial-voltage-dim);
+}
+.colorBone {
+  color: var(--axial-bone);
+}
+.colorSecondary {
+  color: var(--graphite-500);
+}

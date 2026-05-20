@@ -43,9 +43,8 @@
   text-decoration: none;
   border-bottom: 1px solid var(--graphite-700);
   padding-bottom: 1px;
-  transition:
-    color var(--duration-ui) var(--ease-axial),
-    border-color var(--duration-ui) var(--ease-axial);
+  transition: color var(--duration-ui) var(--ease-axial), border-color var(--duration-ui)
+    var(--ease-axial);
 }
 
 .emailLink:hover {

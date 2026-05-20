@@ -61,9 +61,8 @@
   font-family: var(--font-mono);
   font-size: var(--size-16);
   color: var(--graphite-400);
-  transition:
-    transform var(--duration-ui) var(--ease-axial),
-    color var(--duration-ui) var(--ease-axial);
+  transition: transform var(--duration-ui) var(--ease-axial), color var(--duration-ui)
+    var(--ease-axial);
 }
 
 .card:hover .arrow {

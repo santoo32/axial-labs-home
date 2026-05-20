@@ -64,7 +64,7 @@ type Issue = { file: string; key: string; value: string; problem: string };
 
 function collectStrings(
   obj: Record<string, unknown>,
-  prefix = "",
+  prefix = ""
 ): Array<{ key: string; value: string }> {
   return Object.entries(obj).flatMap(([k, v]) => {
     const path = prefix ? `${prefix}.${k}` : k;
@@ -82,7 +82,7 @@ function leafKey(dotPath: string): string {
 function checkFile(
   messages: Record<string, unknown>,
   filename: string,
-  forbidden: string[],
+  forbidden: string[]
 ): Issue[] {
   const issues: Issue[] = [];
   const entries = collectStrings(messages);
