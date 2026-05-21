@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/next";
 import { routing } from "@/i18n/routing";
 import { NavBar } from "@/components/NavBar/NavBar";
 import { SITE_URL, buildAlternates } from "@/lib/seo";
@@ -68,6 +69,7 @@ export default async function LocaleLayout({
       </a>
       <NavBar locale={locale} />
       {children}
+      <Analytics />
     </NextIntlClientProvider>
   );
 }
