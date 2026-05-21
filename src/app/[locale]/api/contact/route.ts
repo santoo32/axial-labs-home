@@ -67,7 +67,7 @@ export async function POST(
   }
 
   const { error } = await resend.emails.send({
-    from: "Axial Labs <contact@axiallabs.com>",
+    from: "Axial Labs <onboarding@resend.dev>",
     to: "santiagot.roa@gmail.com",
     subject: `[${locale.toUpperCase()}] Brief from ${name} — ${project}`,
     replyTo: email,
