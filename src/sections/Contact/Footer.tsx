@@ -126,22 +126,12 @@ export function Footer({ locale }: Props) {
             </li>
             <li>
               <a
-                href={SITE.social.github}
+                href="https://instagram.com/axial.labs"
                 className={styles.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/in/santiagoroa"
-                className={styles.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
+                Instagram
               </a>
             </li>
           </ul>
